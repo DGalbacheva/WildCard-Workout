@@ -2,12 +2,12 @@
 //  ViewController.swift
 //  WildCardWorkout
 //
-//  Created by MacBook Pro 15 on 13.11.2024.
+//  Created by Doroteya Galbacheva on 13.11.2024.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CardSelectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
