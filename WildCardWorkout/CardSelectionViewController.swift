@@ -11,8 +11,8 @@ class CardSelectionViewController: UIViewController {
     
     
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet var cardImageView: UIImageView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
