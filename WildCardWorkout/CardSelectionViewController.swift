@@ -13,7 +13,7 @@ class CardSelectionViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet var cardImageView: UIImageView!
     
-    var cards: [UIImage] = []
+    var cards: [UIImage] = Card.allValues
     
     var timer: Timer!
     
