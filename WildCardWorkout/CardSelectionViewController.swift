@@ -27,7 +27,7 @@ class CardSelectionViewController: UIViewController {
     }
 
     func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
     }
     
     @objc
@@ -36,12 +36,12 @@ class CardSelectionViewController: UIViewController {
     }
 
     @IBAction func stopButtonTapped(_ sender: UIButton) {
+        timer.invalidate()
     }
+    
     @IBAction func restartButtonTapped(_ sender: UIButton) {
+        timer.invalidate()
+        startTimer()
     }
-    
-    @IBAction func rulesButtonTapped(_ sender: UIButton) {
-    }
-    
 }
 
