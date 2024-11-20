@@ -101,8 +101,42 @@
                     <view key="view" contentMode="scaleToFill" id="zEi-rA-hsv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAR-qH-f7z">
+                                <rect key="frame" x="30" y="170" width="333" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The value of each card represents the number of exercise you do.  J = 11, Q = 12, K = 13, A = 14" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXc-1n-jCS">
+                                <rect key="frame" x="30" y="243" width="333" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-up  ♥️ = Sit-up  ♣️ = Burpees  ♦️ = Jumping Jacks" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-fF-psc">
+                                <rect key="frame" x="96.666666666666686" y="404" width="200" height="175.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="qj5-0R-Jjc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hac-WH-4eu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hac-WH-4eu" firstAttribute="trailing" secondItem="jXc-1n-jCS" secondAttribute="trailing" constant="30" id="13l-29-juG"/>
+                            <constraint firstItem="qb4-fF-psc" firstAttribute="top" secondItem="jXc-1n-jCS" secondAttribute="bottom" constant="75" id="AAZ-jE-ble"/>
+                            <constraint firstItem="qb4-fF-psc" firstAttribute="centerX" secondItem="zEi-rA-hsv" secondAttribute="centerX" id="ETZ-h1-nSE"/>
+                            <constraint firstItem="jXc-1n-jCS" firstAttribute="top" secondItem="fAR-qH-f7z" secondAttribute="bottom" constant="25" id="HtE-Zz-qYX"/>
+                            <constraint firstItem="fAR-qH-f7z" firstAttribute="leading" secondItem="hac-WH-4eu" secondAttribute="leading" constant="30" id="Ie6-eO-sqW"/>
+                            <constraint firstItem="hac-WH-4eu" firstAttribute="trailing" secondItem="fAR-qH-f7z" secondAttribute="trailing" constant="30" id="OJ5-fe-rKv"/>
+                            <constraint firstItem="jXc-1n-jCS" firstAttribute="leading" secondItem="hac-WH-4eu" secondAttribute="leading" constant="30" id="Qgw-9F-ejZ"/>
+                            <constraint firstItem="fAR-qH-f7z" firstAttribute="top" secondItem="hac-WH-4eu" secondAttribute="top" constant="170" id="f3f-4j-o8S"/>
+                            <constraint firstItem="jXc-1n-jCS" firstAttribute="top" secondItem="fAR-qH-f7z" secondAttribute="bottom" constant="25" id="vw6-Fc-R3P"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcI-ri-9pD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
